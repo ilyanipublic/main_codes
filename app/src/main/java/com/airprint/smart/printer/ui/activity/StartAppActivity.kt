@@ -46,6 +46,7 @@ class StartAppActivity : BaseActivity<ActivityStartAppBinding>(), RemoteConfigCa
     private var mInterstitialAd: InterstitialAd? = null
     private var isAppInBackground: Boolean = false
     private var myCTR = 0
+    //ew
     override fun setupViewBinding(): ActivityStartAppBinding {
         return ActivityStartAppBinding.inflate(layoutInflater)
     }
