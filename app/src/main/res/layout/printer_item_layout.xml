@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/printer_item_bg">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/printerNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ems="17"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/find_printer_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@+id/printerTypeTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/printerTypeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ems="15"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/searching_sub_text_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/printerNameTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

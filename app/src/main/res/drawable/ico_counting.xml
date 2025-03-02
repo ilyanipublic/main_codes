@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="37dp"
+    android:height="34dp"
+    android:viewportWidth="37"
+    android:viewportHeight="34">
+  <path
+      android:pathData="M7.963,1.075L28.999,1.075A6.574,6.574 0,0 1,35.573 7.649L35.573,26.056A6.574,6.574 0,0 1,28.999 32.629L7.963,32.629A6.574,6.574 0,0 1,1.389 26.056L1.389,7.649A6.574,6.574 0,0 1,7.963 1.075z"
+      android:strokeWidth="0.876513"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/searching_sub_text_color"/>
+  <group>
+    <clip-path
+        android:pathData="M7.981,6.352h21v21h-21z"/>
+    <path
+        android:pathData="M7.981,22.379H10.191V22.931H9.086V24.037H10.191V24.589H7.981V25.694H11.297V21.273H7.981V22.379Z"
+        android:fillColor="@color/find_printer_color"/>
+    <path
+        android:pathData="M9.086,12.431H10.191V8.01H7.981V9.115H9.086V12.431Z"
+        android:fillColor="@color/find_printer_color"/>
+    <path
+        android:pathData="M7.981,15.747H9.97L7.981,18.068V19.063H11.297V17.958H9.307L11.297,15.637V14.642H7.981V15.747Z"
+        android:fillColor="@color/find_printer_color"/>
+    <path
+        android:pathData="M28.981,22.378H13.507V24.589H28.981V22.378Z"
+        android:fillColor="@color/find_printer_color"/>
+    <path
+        android:pathData="M28.981,9.115H13.507V11.326H28.981V9.115Z"
+        android:fillColor="@color/find_printer_color"/>
+    <path
+        android:pathData="M28.981,15.747H13.507V17.958H28.981V15.747Z"
+        android:fillColor="@color/find_printer_color"/>
+  </group>
+</vector>

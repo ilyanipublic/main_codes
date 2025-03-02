@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="104dp"
+    android:height="30dp"
+    android:viewportWidth="104"
+    android:viewportHeight="30">
+  <path
+      android:pathData="M8,0L23,0A8,8 0,0 1,31 8L31,22A8,8 0,0 1,23 30L8,30A8,8 0,0 1,0 22L0,8A8,8 0,0 1,8 0z"
+      android:fillColor="@color/app_color"/>
+  <path
+      android:pathData="M16.84,10.82V21H15.3V12.36H15.24L12.81,13.95V12.48L15.35,10.82H16.84Z"
+      android:fillColor="@color/find_printer_color"/>
+  <path
+      android:pathData="M49,0L96,0A8,8 0,0 1,104 8L104,22A8,8 0,0 1,96 30L49,30A8,8 0,0 1,41 22L41,8A8,8 0,0 1,49 0z"
+      android:fillColor="@color/app_color"/>
+  <path
+      android:pathData="M50,15H62M56,9V21"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/find_printer_color"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M84,15H96"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/find_printer_color"
+      android:strokeLineCap="round"/>
+</vector>

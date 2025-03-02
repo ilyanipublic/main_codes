@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pro_bg"
+    tools:context=".ui.activity.PremiumActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/closeBtn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/close_icon"
+                android:foreground="@drawable/card_ripple_effect"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                app:tint="@color/button_color"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mainIv"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/first_iv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mainTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/splash_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainIv"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/get_a_special_offer"
+                android:textColor="@color/pro_text_color"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/pro_disount"
+                app:layout_constraintBottom_toBottomOf="@+id/question1"
+                app:layout_constraintStart_toEndOf="@+id/question1"
+                app:layout_constraintTop_toTopOf="@+id/question1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter_regular"
+                android:lineSpacingExtra="@dimen/_1sdp"
+                android:text="@string/ad_tx"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/removeAdsIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/remove_ad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ans1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/ad_s_free_experience"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/removeAdsIcon"
+                app:layout_constraintStart_toEndOf="@id/removeAdsIcon"
+                app:layout_constraintTop_toTopOf="@+id/removeAdsIcon"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/tick_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/question2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/question2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/proIcon"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/dollar_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/proTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/one_time_purchase"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/proIcon"
+                app:layout_constraintStart_toEndOf="@id/proIcon"
+                app:layout_constraintTop_toTopOf="@+id/proIcon"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/tick_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/proTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/proTv" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/weeklyBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_105sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                app:cardBackgroundColor="@color/card_bg_color"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintEnd_toStartOf="@+id/monthlyBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:strokeColor="@color/stroke_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proIcon"
+                app:strokeWidth="0dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:foreground="@drawable/card_ripple_effect"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/weekly"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_marginHorizontal="@dimen/_1sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/weeklyPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/pkr_1000_00"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/monthlyBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_105sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/card_bg_color"
+                app:layout_constraintEnd_toStartOf="@+id/lifeTimeBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                app:layout_constraintStart_toEndOf="@+id/weeklyBtn"
+                app:layout_constraintTop_toBottomOf="@+id/proIcon"
+                app:strokeColor="@color/stroke_color"
+                app:strokeWidth="@dimen/_1sdp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:foreground="@drawable/card_ripple_effect"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/monthly"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_13ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/monthlyPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/pkr_1000_00"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/lifeTimeBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_105sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/card_bg_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginStart="@dimen/_4sdp"
+                app:strokeColor="@color/stroke_color"
+                app:layout_constraintStart_toEndOf="@+id/monthlyBtn"
+                app:layout_constraintTop_toBottomOf="@+id/proIcon"
+                app:strokeWidth="0dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:foreground="@drawable/card_ripple_effect"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/life_time"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_13ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/lifeTimePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/pkr_1000_00"
+                        android:textColor="@color/pro_text_color"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="weeklyBtn,monthlyBtn,lifeTimeBtn"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/offIv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/off_icon"
+               app:layout_constraintBottom_toBottomOf="@+id/barrier"
+                app:layout_constraintTop_toTopOf="@+id/barrier"
+                app:layout_constraintStart_toStartOf="@+id/monthlyBtn"
+                app:layout_constraintEnd_toEndOf="@+id/monthlyBtn"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/continueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="@string/purchase"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:foreground="@drawable/button_ripple_effect"
+                app:layout_constraintTop_toBottomOf="@+id/barrier"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ppBottomTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/inter_regular"
+                android:foreground="@drawable/circle_ripple_effect"
+                android:gravity="center"
+                android:text="@string/privacy_policy_1"
+                android:textAllCaps="true"
+                android:textColor="@color/term_of_use"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/middleViews"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toBottomOf="@+id/continueBtn" />
+
+            <View
+                android:id="@+id/middleViews"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="@+id/ppBottomTv"
+                app:layout_constraintStart_toEndOf="@+id/ppBottomTv"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/termOfUseBottomTv"
+                android:background="@color/term_of_use"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/termOfUseBottomTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/inter_regular"
+                android:foreground="@drawable/circle_ripple_effect"
+                android:gravity="center"
+                android:text="@string/term_of_user"
+                android:textAllCaps="true"
+                android:textColor="@color/term_of_use"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/middleViews"
+                app:layout_constraintTop_toBottomOf="@+id/continueBtn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

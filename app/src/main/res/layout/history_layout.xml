@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginVertical="@dimen/_7sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/all_in_one_card">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/linkTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/find_printer_color"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="start"
+            app:layout_constraintBottom_toTopOf="@+id/dateTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dateTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:fontFamily="@font/inter_regular"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ems="15"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/searching_sub_text_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linkTv" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:foreground="@drawable/card_ripple_effect"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/icon_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/copyIcon"
+
+            app:layout_constraintTop_toBottomOf="@+id/linkTv" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/copyIcon"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:foreground="@drawable/card_ripple_effect"
+            android:src="@drawable/icon_copy"
+            android:padding="@dimen/_5sdp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/linkTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

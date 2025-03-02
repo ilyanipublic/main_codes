@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".ui.activity.LanguageActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+        <View
+            android:id="@+id/mainAcToolbarView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:foreground="@drawable/card_ripple_effect"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/back_ic"
+            app:layout_constraintBottom_toBottomOf="@+id/mainAcToolbarView"
+            app:layout_constraintStart_toStartOf="@+id/mainAcToolbarView"
+            app:layout_constraintTop_toTopOf="@+id/mainAcToolbarView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_semi_bold"
+            android:maxEms="9"
+            android:maxLines="1"
+            android:text="@string/pick_your_language"
+            android:textColor="@color/find_printer_color"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/mainAcToolbarView"
+            app:layout_constraintEnd_toStartOf="@+id/doneBtn"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="@+id/mainAcToolbarView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/doneBtn"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/inter_medium"
+            android:foreground="@drawable/button_ripple_effect"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/mainAcToolbarView"
+            app:layout_constraintTop_toTopOf="@+id/mainAcToolbarView"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/layoutAd"
+            app:layout_constraintTop_toBottomOf="@+id/mainAcToolbarView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardBackgroundColor="@color/bottom_nave_color"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <FrameLayout
+                android:id="@+id/nativeAdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/loadNative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+                    <include
+                        layout="@layout/gnt_medium_template_view" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvLoadingAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/loading_ad"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HelpThirdFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_15sdp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/firstVector"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewGlobal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_global_setting"
+                app:layout_constraintTop_toBottomOf="@+id/firstVector" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/wifiTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/printer"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/viewGlobal"
+                app:layout_constraintBottom_toBottomOf="@+id/viewGlobal"
+                app:layout_constraintTop_toTopOf="@+id/viewGlobal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/page1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/no_printer_selected"
+                android:textColor="@color/searching_sub_text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewGlobal"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/viewGlobal" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/next_errow"
+                app:layout_constraintBottom_toBottomOf="@+id/viewGlobal"
+                app:layout_constraintEnd_toEndOf="@+id/viewGlobal"
+                app:layout_constraintTop_toTopOf="@+id/viewGlobal" />
+
+
+
+            <View
+                android:id="@+id/viewHowMuchCopies"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_global_setting"
+                app:layout_constraintTop_toBottomOf="@+id/viewGlobal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/copies"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/viewHowMuchCopies"
+                app:layout_constraintBottom_toTopOf="@+id/lineView"
+                app:layout_constraintTop_toTopOf="@+id/viewHowMuchCopies" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_104sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/art_ic"
+                app:layout_constraintEnd_toEndOf="@+id/viewHowMuchCopies"
+                app:layout_constraintBottom_toTopOf="@+id/lineView"
+                app:layout_constraintTop_toTopOf="@+id/viewHowMuchCopies"/>
+
+
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line_color"
+                app:layout_constraintTop_toTopOf="@+id/viewHowMuchCopies"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHowMuchCopies"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/paper_size"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/viewGlobal"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHowMuchCopies"
+                app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/page2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/a4"
+                android:textColor="@color/searching_sub_text_color"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatImageView1"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHowMuchCopies"
+                app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView1"
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/next_errow"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHowMuchCopies"
+                app:layout_constraintEnd_toEndOf="@+id/viewHowMuchCopies"
+                app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/layout"
+                android:textColor="@color/searching_sub_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/viewHowMuchCopies"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <com.google.android.material.textview.MaterialTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/paper_size"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/viewHowMuchCopies"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHowMuchCopies"
+                app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+            <View
+                android:id="@+id/pagePerSheet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/bg_global_setting"
+                app:layout_constraintTop_toBottomOf="@+id/tvLayout" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/wifiTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/pages_per_sheet"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/pagePerSheet"
+                app:layout_constraintBottom_toTopOf="@+id/lineView1"
+                app:layout_constraintTop_toTopOf="@+id/pagePerSheet" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/page3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/_1"
+                android:textColor="@color/searching_sub_text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toTopOf="@+id/lineView1"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatImageView2"
+                app:layout_constraintTop_toTopOf="@+id/pagePerSheet" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView2"
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/next_errow"
+                app:layout_constraintBottom_toTopOf="@+id/lineView1"
+                app:layout_constraintEnd_toEndOf="@+id/pagePerSheet"
+                app:layout_constraintTop_toTopOf="@+id/pagePerSheet" />
+
+
+
+
+
+            <View
+                android:id="@+id/lineView1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line_color"
+                app:layout_constraintTop_toTopOf="@+id/pagePerSheet"
+                app:layout_constraintBottom_toBottomOf="@+id/pagePerSheet"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/paper_size"
+                android:textColor="@color/find_printer_color"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/pagePerSheet"
+                app:layout_constraintBottom_toBottomOf="@+id/pagePerSheet"
+                app:layout_constraintTop_toBottomOf="@+id/lineView1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/double_thin_line"
+                android:textColor="@color/searching_sub_text_color"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/appCompatImageView3"
+                app:layout_constraintBottom_toBottomOf="@+id/pagePerSheet"
+                app:layout_constraintTop_toBottomOf="@+id/lineView1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView3"
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/next_errow"
+                app:layout_constraintBottom_toBottomOf="@+id/pagePerSheet"
+                app:layout_constraintEnd_toEndOf="@+id/pagePerSheet"
+                app:layout_constraintTop_toBottomOf="@+id/lineView1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

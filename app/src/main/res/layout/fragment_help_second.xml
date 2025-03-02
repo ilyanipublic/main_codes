@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".ui.fragments.HelpSecondFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/firstVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/second_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mainTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/test_print"
+        android:textColor="@color/find_printer_color"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@+id/firstVector"
+        app:layout_constraintStart_toStartOf="@+id/firstVector"
+        app:layout_constraintTop_toBottomOf="@+id/firstVector" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/firstTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_regular"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:text="@string/second_tv"
+        android:textColor="@color/find_printer_color"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTv" />
+
+
+    <View
+        android:id="@+id/viewGlobal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginHorizontal="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_global_setting"
+        app:layout_constraintTop_toBottomOf="@+id/firstTv" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/wifiIv"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/docs_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGlobal"
+        app:layout_constraintStart_toStartOf="@+id/viewGlobal"
+        app:layout_constraintTop_toTopOf="@+id/viewGlobal" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wifiTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/sample_document"
+        android:textColor="@color/find_printer_color"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/subTv"
+        app:layout_constraintStart_toEndOf="@+id/wifiIv"
+        app:layout_constraintTop_toBottomOf="@+id/viewGlobal" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/subTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/pdf_document_22_kb"
+        android:textColor="@color/searching_sub_text_color"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toTopOf="@+id/viewGlobal"
+        app:layout_constraintStart_toEndOf="@+id/wifiIv"
+        app:layout_constraintTop_toBottomOf="@+id/wifiTv" />
+
+
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/page1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/_1_page"
+        android:textColor="@color/searching_sub_text_color"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGlobal"
+        app:layout_constraintEnd_toEndOf="@+id/viewGlobal"
+        app:layout_constraintTop_toTopOf="@+id/viewGlobal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

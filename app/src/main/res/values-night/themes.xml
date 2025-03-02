@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartPrinter" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="DialogAnimationInOut">
+        <item name="android:windowEnterAnimation">@anim/animate_in_out_enter</item>
+        <item name="android:windowExitAnimation">@anim/animate_in_out_exit</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/normal</item>
+        <item name="colorControlActivated">@color/active_color</item>
+
+    </style>
+
+    <color name="app_color">#FF000000</color>
+    <color name="button_ripple_color">#999999</color>
+    <color name="bottom_nave_color">#20232D</color>
+    <color name="black_and_white">#FFFFFF</color>
+    <color name="white_and_black">#FF000000</color>
+    <color name="white_and_black_sub_color">#B3FFFFFF</color>
+    <color name="blue_color">#5270F0</color>
+    <color name="clio_board_bg_color">#1F293A</color>
+    <color name="main_scan_card_dots_color">#330C83FF</color>
+    <color name="animation_color">#C0DAFF</color>
+    <color name="searching_sub_text_color">#C1C1C1</color>
+    <color name="find_printer_color">#FFFFFF</color>
+    <color name="button_color">#0C83FF</color>
+    <color name="tab_un_selected_color">#D9D9D9</color>
+    <color name="line_color">#2B2F3D</color>
+    <color name="lock_bg_green">#ff00bb9e</color>
+    <color name="alert_color">#ff0f0f</color>
+    <color name="delete_icon_color">#FFFFFF</color>
+    <color name="above_color">#000000</color>
+    <color name="below_color">#20232D</color>
+    <color name="splash_tv_sky">#FF01AEFF</color>
+    <color name="button_color_dim">#330C83FF</color>
+    <color name="track_color">#ABACB4</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#DAA520</color>
+    <color name="pro_text_color">#FFFFFF</color>
+    <color name="card_bg_color">#20232D</color>
+    <color name="pro_bg_1_color">#16181F</color>
+    <color name="pro_bg_2_color">#FF20232D</color>
+    <color name="pro_bg_3_color">#FF161820</color>
+    <color name="pro_bg_4_color">#0502A9FF</color>
+    <color name="pro_bg_5_color">#94BADBFA</color>
+    <color name="pro_bg_6_color">#6FA2F9</color>
+    <color name="pro_bg_7_color">#0320232D</color>
+    <color name="pro_bg_8_color">#161820</color>
+    <color name="stroke_color">#0C83FF</color>
+    <color name="term_of_use">#AAAAAA</color>
+    <color name="add_color">#1F253E</color>
+    <color name="buy_pro_color">#2B2F3D</color>
+    <color name="pro_bg_card_color">#20232D</color>
+    <color name="normal">#D8D8D8</color>
+    <color name="active_color">#FFBC2F</color>
+</resources>
